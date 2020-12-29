@@ -23,7 +23,14 @@ module.exports = {
             'https://i.redd.it/6h12aduyfdn41.jpg',
             'https://i.redd.it/niuk0e4tv7h51.jpg',
             'https://pbs.twimg.com/media/EiqW9QnWoAENyeV.jpg',
-            'https://i.pinimg.com/originals/fc/2a/56/fc2a56800981f74b13d03a1e657c71d8.jpg'
+            'https://i.pinimg.com/originals/fc/2a/56/fc2a56800981f74b13d03a1e657c71d8.jpg',
+            'https://media1.tenor.com/images/4139e30339c082cd0fc2d1581bdd35a0/tenor.gif',
+            'https://media1.tenor.com/images/b9c9eb0283047adc36932d5992813ac9/tenor.gif',
+            'https://media1.tenor.com/images/60f5e615a68fab018c4f13424c4c178a/tenor.gif',
+            'https://media1.tenor.com/images/dc6777e9b1f7e63ae3c55a135684ee0d/tenor.gif',
+            'https://media1.tenor.com/images/9039b18dabe39460fdfafc63f95ce341/tenor.gif',
+            'https://media1.tenor.com/images/c639ce6c979dc13261311a8175670d5d/tenor.gif',
+            'https://i.redd.it/qmrby66k1je41.png'
         ];
         var gif = Math.floor(Math.random()*Gifler.length);
         const embed = new MessageEmbed()
