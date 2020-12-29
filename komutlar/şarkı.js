@@ -24,7 +24,11 @@ module.exports = {
 
             })
         } else {
-            message.reply('Sesli kanalda olman lazım! ❌')
+            message.reply('Sesli kanalda olman lazım! ❌').then(sil => {
+                setTimeout(() => {
+                    sil.delete()
+                }, 5000);
+            })
         }
     }
 }
