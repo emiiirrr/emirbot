@@ -1,0 +1,25 @@
+{
+  "name": "emirbot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "node bot.js"
+  },
+  "author": "Emiiirrr",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.3",
+    "discord.js": "^12.5.1",
+    "discordjs-ytdl": "^1.2.0",
+    "ffmpeg-static": "^4.2.7",
+    "fs": "0.0.1-security",
+    "moment": "^2.29.1",
+    "moment-duration-format": "^2.3.2",
+    "opusscript": "0.0.7",
+    "os": "^0.1.1",
+    "path": "^0.12.7",
+    "rhino-ms": "^0.4.0",
+    "ytdl-core": "^4.2.1"
+  }
+}
