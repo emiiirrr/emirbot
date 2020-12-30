@@ -98,5 +98,16 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'ali out') {
+    msg.delete(msg.author)
+    const ali = new MessageEmbed()
+    .setAuthor('Ali out')
+    .setColor("RANDOM")
+    .setImage('https://media1.tenor.com/images/ccd44330b921bba21e897e708955e722/tenor.gif');
+    msg.channel.send(ali)
+  }
+});
+
 
 client.login(TOKEN)
