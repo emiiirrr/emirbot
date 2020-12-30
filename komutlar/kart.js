@@ -56,6 +56,8 @@ module.exports = {
         ];
         var gif = Math.floor(Math.random()*Gifler.length);
         const embed = new MessageEmbed()
+        .setAuthor('Kart Savaşları')
+        .setColor("RED")
         .setFooter(`${message.author.tag}`, `${message.author.displayAvatarURL({ dynamic: true })}`)
         .setImage(`${Gifler[gif]}`);
         message.channel.send(embed)
