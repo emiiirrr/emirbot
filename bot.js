@@ -104,9 +104,9 @@ client.on('message', message => {
   if (message.content.toLocaleLowerCase() === 'şevval out') {
     message.delete(message.author)
     const şevval = new MessageEmbed()
-    .setAuthor(`Söylemediniz`)
+    .setAuthor(`Şevval Out`)
     .setColor("RED")
-    .setImage('https://blog.hubspot.com/hubfs/Shrug-Emoji.jpg')
+    .setImage('https://media.giphy.com/media/XZGWHY1vMydlcyz2vx/giphy.gif')
     message.channel.send(şevval)
   }
 })
