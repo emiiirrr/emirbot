@@ -2,6 +2,7 @@ const play = require('discordjs-ytdl')
 const { MessageEmbed } = require('discord.js')
 module.exports = {
     kod: "play",
+    aliases: ['p'],
     async run (client, message, args) {
         if (message.member.voice.channel) {
             const connection = await message.member.voice.channel.join()
