@@ -2,6 +2,7 @@ const moment = require('moment')
 require('moment-duration-format')
 module.exports = {
     kod: "kullanıcı",
+    aliases: ['info', 'user']
     async run (client, message, args) {
         const { MessageEmbed } = require('discord.js')
         let üye = message.mentions.users.first()
