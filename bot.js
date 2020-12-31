@@ -120,5 +120,38 @@ client.on('message', message => {
   }
 })
 
+client.on('message', message => {
+  if (message.content.toLocaleLowerCase() === 'şevval out') {
+    message.delete(message.author)
+    const şevval = new MessageEmbed()
+    .setAuthor(`Söylemediniz`)
+    .setColor("RED")
+    .setImage('https://blog.hubspot.com/hubfs/Shrug-Emoji.jpg')
+    message.channel.send(şevval)
+  }
+})
+
+client.on('message', message => {
+  if (message.content.toLocaleLowerCase() === 'emine out') {
+    message.delete(message.author)
+    const emine = new MessageEmbed()
+    .setAuthor('Söylemediniz ')
+    .setColor("RED")
+    .setImage('https://blog.hubspot.com/hubfs/Shrug-Emoji.jpg')
+    message.channel.send(emine)
+  }
+})
+
+client.on('message', message => {
+  if (message.content.toLocaleLowerCase() === 'ömer out') {
+    message.delete(message.author)
+    const ömer = new MessageEmbed()
+    .setAuthor('Söylemediniz ')
+    .setColor("RED")
+    .setImage('https://blog.hubspot.com/hubfs/Shrug-Emoji.jpg')
+    message.channel.send(ömer)
+  }
+})
+
 
 client.login(TOKEN)
