@@ -1,6 +1,6 @@
 const { MessageEmbed } = require('discord.js')
 module.exports = {
-    kod: "bruh",
+    kod: "meme",
     async run (client, message, args) {
         var Gifler = [
             'https://media.tenor.com/images/f90c88e13d5b2f5ae5feb6b441c61935/tenor.gif',
