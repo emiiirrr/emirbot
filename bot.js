@@ -42,13 +42,12 @@ client.on("message", async message => {
   }
 });
 
-
 client.on('ready', () => {
   console.log(`Botun geldi kanka ${client.user.tag}!`)
   const durumlar = [
     "Yardım için -> e?yardım",
     "Emiiirrr⌁#6152",
-    `${client.guilds.cache.size} Sunucudayım!`
+    `${client.guilds.cache.size} Sunucu`
   ]
   setInterval(function () {
     let durum = durumlar[Math.floor(Math.random()*durumlar.length)]
@@ -109,9 +108,9 @@ client.on('message', message => {
   if (message.content.toLocaleLowerCase() === 'şevval out') {
     message.delete(message.author)
     const şevval = new MessageEmbed()
-    .setAuthor(`Şevval Out`)
+    .setAuthor(`Söylemediniz`)
     .setColor("RED")
-    .setImage('https://media.giphy.com/media/XZGWHY1vMydlcyz2vx/giphy.gif')
+    .setImage('https://blog.hubspot.com/hubfs/Shrug-Emoji.jpg')
     message.channel.send(şevval)
   }
 })
@@ -133,7 +132,7 @@ client.on('message', message => {
     const ömer = new MessageEmbed()
     .setAuthor('Ömer Out')
     .setColor("RED")
-    .setImage('https://media.giphy.com/media/RAkUIXjaKnTfz4cd5F/giphy.gif')
+    .setImage('https://media1.tenor.com/images/a674181d59056ab132376921367eb266/tenor.gif')
     message.channel.send(ömer)
   }
 })
