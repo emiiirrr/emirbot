@@ -43,11 +43,11 @@ client.on('ready', () => {
   const durumlar = [
     "Yardım için -> e?yardım",
     "Emiiirrr⌁#6152",
-    `${client.guilds.cache.size} Sunucu`
+    `${client.guilds.cache.size} Sunucudayım!`
   ]
   setInterval(function () {
     let durum = durumlar[Math.floor(Math.random()*durumlar.length)]
-    client.user.setActivity(durum, { type: "LISTENING "})
+    client.user.setActivity(durum)
   }, 10000)
   client.user.setStatus('online')
 });
