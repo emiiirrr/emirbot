@@ -109,5 +109,16 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', message => {
+  if (message.content.toLocaleLowerCase() === 'elif out') {
+    message.delete(message.author)
+    const elif = new MessageEmbed()
+    .setAuthor('Elif out')
+    .setColor("RED")
+    .setImage('https://i.pinimg.com/originals/89/bb/3b/89bb3b3bb331cb3dde823c653d82d3d1.png')
+    message.channel.send(elif)
+  }
+})
+
 
 client.login(TOKEN)
