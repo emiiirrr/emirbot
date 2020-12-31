@@ -1,5 +1,6 @@
 module.exports = {
   kod: "yardım",
+  aliases: ["help"],
   async run (client, message, args) {
     const Discord = require('discord.js')
     const yardım = new Discord.MessageEmbed()
