@@ -1,6 +1,7 @@
 const { MessageEmbed } = require('discord.js')
 module.exports = {
-    kod: "dc",
+    kod: "disconnect",
+    aliases: ['dc', 'leave'],
     async run (client, message, args) {
         if (message.member.voice.channel) {
             const dc = await message.member.voice.channel.leave()
