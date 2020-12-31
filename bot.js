@@ -128,7 +128,7 @@ client.on('message', message => {
     const ömer = new MessageEmbed()
     .setAuthor('Ömer Out')
     .setColor("RED")
-    .setImage('https://media1.tenor.com/images/a674181d59056ab132376921367eb266/tenor.gif')
+    .setImage('https://media.giphy.com/media/RAkUIXjaKnTfz4cd5F/giphy.gif')
     message.channel.send(ömer)
   }
 })
