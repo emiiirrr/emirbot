@@ -93,7 +93,6 @@ client.on('message', message => {
   if (message.content.toLocaleLowerCase() === 'elif out') {
     message.delete(message.author)
     const elif = new MessageEmbed()
-    .setTitle('I Love You 3000...')
     .setAuthor('Elif Out')
     .setColor("RED")
     .setImage('https://media1.tenor.com/images/300209b23f0e0470931912cdaf6924de/tenor.gif')
@@ -222,6 +221,17 @@ client.on('message', message => {
     .setColor("RED")
     .setImage('https://blog.hubspot.com/hubfs/Shrug-Emoji.jpg')
     message.channel.send(umut)
+  }
+})
+
+client.on('message', message => {
+  if (message.content.toLocaleLowerCase() === 'serdar out') {
+    message.delete(message.author)
+    const serdar = new MessageEmbed()
+    .setAuthor(`Söylemediniz`)
+    .setColor("RED")
+    .setImage('https://blog.hubspot.com/hubfs/Shrug-Emoji.jpg')
+    message.channel.send(serdar)
   }
 })
 
