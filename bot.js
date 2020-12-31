@@ -23,20 +23,25 @@ client.on("message", async message => {
 
   if(message.content.startsWith(PREFIX)) {
       const args = message.content.slice(PREFIX.length).trim().split(/ +/);
-      const command = args.shift().toLowerCase();
+      const commandName = args.shift().toLowerCase();
 
-      if(!client.commands.has(command)) return message.channel.send(`Komut dosyamda **${command}** adlı bir komut bulamadım.`);
+      const command = client.commands.get(commandName)
+           || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
+
+      if (!command) return message.channel.send(`Komut dosyamda **${commandName}** adlı bir komut bulamadım.`);
       
-      if (!command) return;
+      if (!commandName) return;
+
 
       try {
-          client.commands.get(command).run(client, message, args);
+          command.run(client, message, args);
 
       } catch (error){
           console.error(error);
       }
   }
 });
+
 
 client.on('ready', () => {
   console.log(`Botun geldi kanka ${client.user.tag}!`)
