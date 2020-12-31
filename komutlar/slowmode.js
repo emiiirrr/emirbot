@@ -1,5 +1,6 @@
 module.exports = {
     kod: "slowmode" ,
+    aliases: ["sm"],
     async run (client, message, args) {
         const ms = require('rhino-ms')
         if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply('Bunu yapamazsın! ❌').then(mesaj1 => {
